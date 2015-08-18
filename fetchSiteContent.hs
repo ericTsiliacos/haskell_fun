@@ -9,12 +9,12 @@ type Error = String
 
 main :: IO ()
 main = do
-  let input = ["http://www.google.com/", "http://www.cnn.com/us"]
+  let input = ["http://www.google.com/"]
   companyNames <- program input
   mapM_ putStrLn companyNames
 
 program :: [URL] -> IO ([CompanyName])
-program urls = c . b $ a urls
+program urls = c . sequence $ a urls
 
 getCompanyName :: PageContent -> Maybe CompanyName
 getCompanyName x = Just x
@@ -26,18 +26,12 @@ getPageContent url = fmap f response
 a :: [URL] -> [IO (Either Error PageContent)]
 a = fmap getPageContent
 
-b :: [IO (Either Error PageContent)] -> IO ([Either Error PageContent])
-b ios = sequence ios
-
 c :: IO ([Either Error PageContent]) -> IO ([CompanyName])
-c = fmap (catMaybes . d)
+c = fmap (catMaybes . fmap d)
 
-d :: [Either Error PageContent] -> [Maybe CompanyName]
-d = fmap e
-
-e :: Either Error PageContent -> Maybe CompanyName
-e (Left _) = Nothing
-e (Right a) = getCompanyName a
+d :: Either Error PageContent -> Maybe CompanyName
+d (Left _) = Nothing
+d (Right a) = getCompanyName a
 
 f :: Result Response_String -> Either Error PageContent
 f (Left _) = Left "failed to find url"
