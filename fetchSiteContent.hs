@@ -14,25 +14,22 @@ main = do
   mapM_ putStrLn companyNames
 
 program :: [URL] -> IO ([CompanyName])
-program urls = c . sequence $ a urls
+program urls = a . sequence $ fmap getPageContent urls
 
 getCompanyName :: PageContent -> Maybe CompanyName
 getCompanyName x = Just x
 
 getPageContent :: URL -> IO (Either Error PageContent)
-getPageContent url = fmap f response
+getPageContent url = fmap c response
   where response = simpleHTTP (getRequest url)
 
-a :: [URL] -> [IO (Either Error PageContent)]
-a = fmap getPageContent
+a :: IO ([Either Error PageContent]) -> IO ([CompanyName])
+a = fmap (catMaybes . fmap b)
 
-c :: IO ([Either Error PageContent]) -> IO ([CompanyName])
-c = fmap (catMaybes . fmap d)
+b :: Either Error PageContent -> Maybe CompanyName
+b (Left _) = Nothing
+b (Right a) = getCompanyName a
 
-d :: Either Error PageContent -> Maybe CompanyName
-d (Left _) = Nothing
-d (Right a) = getCompanyName a
-
-f :: Result Response_String -> Either Error PageContent
-f (Left _) = Left "failed to find url"
-f (Right (Response _ _ _ a)) = Right a
+c :: Result Response_String -> Either Error PageContent
+c (Left _) = Left "failed to find url"
+c (Right (Response _ _ _ a)) = Right a
