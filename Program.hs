@@ -1,3 +1,5 @@
+module Program where
+
 import Data.Maybe
 import Network.HTTP
 import Network.Stream
@@ -6,12 +8,6 @@ type URL = String
 type CompanyName = String
 type PageContent = String
 type Error = String
-
-main :: IO ()
-main = do
-  let input = ["http://www.google.com/"]
-  companyNames <- program input
-  mapM_ putStrLn companyNames
 
 program :: [URL] -> IO ([CompanyName])
 program urls = a . sequence $ fmap getPageContent urls
