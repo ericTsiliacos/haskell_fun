@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html>
+<head profile='http://dublincore.org'>
+<title>Pivotal Labs | Pivotal</title>
+<link href='http://purl.org/dc/elements/1.1/' rel='schema.DC'>
+<link href='http://purl.org/dc/terms/' rel='schema.DCTERMS'>
+<meta content='http://pivotal.io/labs' name='DC.Identifier' schema='DCterms:URI'>
+<meta content='text/html' name='DC.Format' schema='DCterms:IMT'>
+<meta content='Pivotal Labs' name='DC.Title' xml:lang='EN'>
+<meta content='Pivotal Software' name='DC.Creator'>
+<meta content='paas, platform as a service, big data, agile, mobile, oss' name='DC.Subject' xml:lang='EN'>
+<meta content='Pivotal Software, Inc.' name='DC.Publisher'>
+<meta content='info@pivotal.io' name='DC.Publisher.Address'>
+<meta content='Pivotal Software' name='DC.Contributor'>
+<meta content='2015-02-13' name='DC.Date' scheme='ISO8601'>
+<meta content='text/html' name='DC.Type'>
+<meta content='Pivotal is a trusted partner for IT innovation and digital transformation, enabling enterprises to provide modern software-driven experiences for their customers and workforces. The combination of leading agile development services, an open cloud platform and open suite of big data products accelerate innovation cycles for our customers across every industry.' name='DC.Description' xml:lang='EN'>
+<meta content='http://pivotal.io/labs' name='DC.Identifier'>
+<meta content='Copyright 2015, Pivotal Software, Inc.  All rights reserved.' name='DC.Rights'>
+<meta content='2015-02-13' name='DC.Date.X-MetadataLastModified' scheme='ISO8601'>
+<meta content='EN' name='DC.Language' scheme='dcterms:RFC1766'>
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"462e01a639","applicationID":"4451611","transactionName":"IlZaQEAOWQ0AExxdWQNKG11cBVAZ","queueTime":166,"applicationTime":53,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Ug8PV1ZXGwcEUVBUBgA="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<meta content='Pivotal Labs' property='og:title'>
+<meta content='website' property='og:type'>
+<meta content='http://pivotal.io/labs' property='og:url'>
+<meta content='Pivotal is a trusted partner for IT innovation and digital transformation, enabling enterprises to provide modern software-driven experiences for their customers and workforces. The combination of leading agile development services, an open cloud platform and open suite of big data products accelerate innovation cycles for our customers across every industry.' property='og:description'>
+<meta content='https://d1fto35gcfffzn.cloudfront.net/images/brandimages/P_WhiteOnTeal_RGB300.png' property='og:image'>
+<!-- = csrf_meta_tags -->
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no' id='viewport' name='viewport'>
+<link href='https://d1fto35gcfffzn.cloudfront.net/images/favicon.ico' rel='shortcut icon' type='image/vnd.microsoft.icon'>
+<link href="/assets/application-357fd58abd0b9281320d55c61ca90fdd.css" media="all" rel="stylesheet" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39702075-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+<body id='labs'>
+<div id='viewport'>
+<div class='container-main'>
+<header>
+<div class='navbar'>
+<div class='super-nav'>
+<div class='container'>
+<ul>
+<li class='search'>
+<i class='fa fa-search'></i>
+<div id='searchcontainer'></div>
+</li>
+<li>
+<a href='http://blog.pivotal.io'>Blog</a>
+</li>
+<li>
+<a href='/resources' id='resources-nav-link'>Resources</a>
+</li>
+</ul>
+</div>
+</div>
+<div class='container'>
+<div class='menu-icon mobile-only'>
+<div class='menu-bar'></div>
+<div class='menu-bar'></div>
+<div class='menu-bar'></div>
+</div>
+<div class='pivotal-logo'>
+<a href='/'></a>
+</div>
+<ul class='nav'>
+<li id='cloud-nav-link'>
+<a href='/platform'>Platform</a>
+<ul class='nav-menu'>
+<div class='arrow-up'></div>
+<div class='inner-menu'>
+<ul>
+<li>
+<a href='/platform'>Cloud Native Platform</a>
+</li>
+<li>
+<a href='/cloud-native'>Why Cloud Native?</a>
+</li>
+</ul>
+</div>
+</ul>
+</li>
+<li id='data-nav-link'>
+<a href='/big-data/pivotal-big-data-suite'>Data</a>
+</li>
+<li id='pivotal_labs-nav-link'>
+<a href='/labs'>Labs</a>
+</li>
+<li id='customers-nav-link'>
+<a href='/customers'>Customers</a>
+</li>
+<li id='news_events-nav-link'>
+<a href='/news-events'>News &amp; Events</a>
+</li>
+<li id='about-nav-link'>
+<a href='/about'>About</a>
+<ul class='nav-menu'>
+<div class='arrow-up'></div>
+<div class='inner-menu'>
+<li>
+<a href='/about'>Company</a>
+</li>
+<li>
+<a href='/team'>Executive Team</a>
+</li>
+<li>
+<a href='/press-center'>Press Center</a>
+</li>
+<li>
+<a href='/partners'>Partners</a>
+</li>
+<li>
+<a href='/oss'>OSS</a>
+</li>
+<li>
+<a href='/training'>Training</a>
+</li>
+<li>
+<a href='/careers'>Careers</a>
+</li>
+<li>
+<a href='/resources'>Resources</a>
+</li>
+<li>
+<a href='/locations' id='locations-link'>Locations</a>
+</li>
+
+</div>
+</ul>
+</li>
+</ul>
+<div class='cta empty'>
+<a class='contactpopuplink'>Contact</a>
+</div>
+</div>
+</div>
+</header>
+<div class='billboard'>
+<div class='secondary-nav'>
+<div class='container'>
+<ul>
+<li>
+<a href='/labs'>Labs</a>
+</li>
+<li>
+<a href='/labs/process'>Our Approach</a>
+</li>
+<li>
+<a href='/customers#labs'>Clients</a>
+</li>
+<li>
+<a href='/labs/team'>Team</a>
+</li>
+<li>
+<a href='/labs/tools'>Tools</a>
+</li>
+<li>
+<a href='/locations'>Locations</a>
+</li>
+<li>
+<a href='http://blog.pivotal.io/channels/pivotal-labs'>Blog</a>
+</li>
+<li>
+<a href='/labs/connect'>Connect</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class='container'>
+<div class='labs-logo'>
+<img class='sidebyside' src='https://d1fto35gcfffzn.cloudfront.net/images/labs/pivotal-labs-logo.png'>
+</div>
+<h1 class='h1 mainh1'>We Transform How the World Builds Software</h1>
+</div>
+</div>
+<div class='content'>
+<div class='container'>
+<div class='intro'>
+<div class='center'>
+<div class='customer-logos'>
+<a href='/agile/case-study/charity-water-a-non-profit-organization-bringing-clear-safe-drinking-water-to-people-in-developing-nations'>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/charity-water-grayscale.png'>
+</a>
+<a href='http://insiderlouisville.com/business/humana-opens-new-digital-experience-center-press/'>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/humana-118-grayscale.png'>
+</a>
+<a href='/agile/case-study/gnip'>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/gnip-grayscale-80.png'>
+</a>
+<a href='/platform/case-study/new-sundance-website-and-digital-platform-leverage-pivotal-web-services-and-cloud-foundry-to-enable-incredible-storytelling'>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/sundance-grayscale-100.png'>
+</a>
+<a href='/mobile/case-study/groupon'>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/groupon-grayscale-85.png'>
+</a>
+</div>
+<h2 class='h2'>Be Empowered to Create Change.</h2>
+<div class='h4'>Enterprises and startups rely on our 20 years of agile development – the work we do alongside our clients as an integrated product design team. Together we solve real problems and launch market-tested, innovative products that have the power to transform the world. Because we work collaboratively, your team will learn cutting-edge technology and best practices. The knowledge you absorb while working with Pivotal Labs® is just as valuable as the product itself.</div>
+<div class='cta smint'>
+<a href='/labs/process'>
+Take home our approach
+<i class='fa fa-angle-right'></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class='customerquotessection'>
+<div class='fifty big-box'>
+<div class='horizontaldottedline'></div>
+<div class='quote'>
+<div class='tabs'>
+<div class='tab'>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/logo-shutterstock-white-160.png'>
+<br>
+<br>
+“Pivotal Labs delivers results in mobile like no one else in their business. From strategy, to design and engineering, the team at Pivotal Labs is world class and a pleasure to work with.”
+<br>
+<br>
+<div class='h4'>Jim Chou</div>
+<p>CTO at Shutterstock</p>
+</div>
+<div class='tab'>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/logo-xactly-white-160.png'>
+<br>
+<br>
+“Pivotal Labs’ UX and design work on our tablet app was so good that we redesigned our entire desktop experience to match their tablet work.”
+<br>
+<br>
+<div class='h4'>Ron Rasmussen</div>
+<p>VP Engineering at Xactly</p>
+</div>
+<div class='tab'>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/logo-modcloth-white-160.png'>
+<br>
+<br>
+“Your team will be stronger when you leave Pivotal. Pivotal sets you up for long-term success. It’s a velocity gain over time, not a short-term fix.”
+<br>
+<br>
+<div class='h4'>Fiona O’Donnell-McCarthy</div>
+<p>Product Manager at ModCloth</p>
+</div>
+<div class='tab'>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/logo-sharethrough-white-160.png'>
+<br>
+<br>
+“Pivotal moves lightning-fast. We ran out of backlog after just eight days.”
+<br>
+<br>
+<div class='h4'>Rob Slifka</div>
+<p>Director of Engineering at Sharethrough</p>
+</div>
+<div class='tab'>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/logo-gnip-white-90.png'>
+<br>
+<br>
+“I bought the Pivotal way hook line and sinker. It changed my view of the way to build software—definitely a change for the better.”
+<br>
+<br>
+<div class='h4'>Jud Valeski</div>
+<p>CEO of Gnip</p>
+</div>
+<div class='tab'>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/logo-casecommons-white-180.png'>
+<br>
+<br>
+“It’s very cool to have all the domain experts working together. In addition to building the product, Pivotal helped us plan our strategic roadmap.”
+<br>
+<br>
+<div class='h4'>Kathleen Feely</div>
+<p>CEO of Case Commons</p>
+</div>
+<div class='tab'>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/logo-corelogic-white-160.png'>
+<br>
+<br>
+“The Pivotal Labs experience allows us to partner with Pivotal, having CoreLogic engineers working directly with Pivotal engineers developing applications jointly, training our engineers on new, agile techniques.”
+<br>
+<br>
+<div class='h4'>Richard Leurig</div>
+<p>Senior Vice President at CoreLogic</p>
+</div>
+<div class='tab'>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/logo-humana-white-160.png'>
+<br>
+<br>
+“We have to be agile. This environment is demonstrating that agility. It allows you to do things as a team and do it quickly.”
+<br>
+<br>
+<div class='h4'>Bruce Broussard</div>
+<p>CEO of Humana</p>
+</div>
+</div>
+</div>
+</div>
+<div class='fifty'>
+<div class='tab-links'>
+<ul>
+<li class='active-tab'>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/chou.png'>
+<div class='overlay'></div>
+</li>
+<li>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/rasmussen.png'>
+<div class='overlay'></div>
+</li>
+<li>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/odonnellmccarthy.png'>
+<div class='overlay'></div>
+</li>
+<li>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/slifka-brick.jpg'>
+<div class='overlay'></div>
+</li>
+<li>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/valeski.png'>
+<div class='overlay'></div>
+</li>
+<li>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/feely.png'>
+<div class='overlay'></div>
+</li>
+<li>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/leurig.png'>
+<div class='overlay'></div>
+</li>
+<li>
+<img src='https://d1fto35gcfffzn.cloudfront.net/images/labs/broussard.png'>
+<div class='overlay'></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class='wecanbuildthat'>
+<div class='container'>
+<h2 class='h2'>Yes, We Can Build That.</h2>
+<div class='h4'>From consumer-facing mobile apps to enterprise technologies, our team of experts is ready to take on any challenge.</div>
+<ul>
+<li class='thirtywide sidebyside'>
+<svg>
+<use fill='#ffffff' xlink:href='/svg/pivotal-icon-pack.svg#icon-leadbypivots'></use>
+</svg>
+<h3 class='h3'>Led by Pivots</h3>
+<h4 class='h4'>Our motivated and brilliant workforce pairs with you.</h4>
+</li>
+<li class='thirtywide sidebyside'>
+<svg>
+<use fill='#ffffff' xlink:href='/svg/pivotal-icon-pack.svg#icon-continuous'></use>
+</svg>
+<h3 class='h3'>Agile Methodology</h3>
+<h4 class='h4'>More than just a manifesto, this is real collaboration.</h4>
+</li>
+<li class='thirtywide sidebyside'>
+<svg>
+<use fill='#ffffff' xlink:href='/svg/pivotal-icon-pack.svg#icon-therighttoolswithcloud'></use>
+</svg>
+<h3 class='h3'>The Right Tools</h3>
+<h4 class='h4'>We know the full stack and bring the best of it to your project.</h4>
+</li>
+</ul>
+<h2 class='h2'>Have a Project? We Can Help.</h2>
+<div class='cta smint'>
+<a href='/labs/connect'>
+Contact Us
+<i class='fa fa-angle-right'></i>
+</a>
+</div>
+</div>
+</div>
+<div class='ourprocessyieldsimpressiveresults'>
+<h2 class='h2'>Our Process Yields Impressive Results</h2>
+<div class='casestudies'>
+<div class='thirtywide sidebyside'>
+<div class='casestudy'>
+<a href='/agile/case-study/skills-matter'>
+<div class='text'>
+<div class='h4'>
+<strong>Skills Matter</strong>
+</div>
+<h2 class='h2'>Software Developer Outreach</h2>
+<h4 class='h4'>Resources for developers to learn and connect</h4>
+</div>
+<div class='overlay'></div>
+</a>
+</div>
+<div class='casestudy'>
+<a href='/agile/case-study/gospotcheck'>
+<div class='text'>
+<div class='h4'>
+<strong>GoSpotCheck</strong>
+</div>
+<h2 class='h2'>Mobile Retail Data Collection</h2>
+<h4 class='h4'>Leveraging retail field data to drive better business decisions</h4>
+</div>
+<div class='overlay'></div>
+</a>
+</div>
+</div>
+<div class='thirtywide sidebyside'>
+<div class='casestudy'>
+<a href='/mobile/case-study/crescendo-bioscience'>
+<div class='text'>
+<div class='h4'>
+<strong>Crescendo</strong>
+</div>
+<h2 class='h2'>Healthcare</h2>
+<h4 class='h4'>Enabling patients and doctors to easily track symptoms</h4>
+</div>
+<div class='overlay'></div>
+</a>
+</div>
+<div class='casestudy'>
+<a href='/mobile/case-study/groupon'>
+<div class='text'>
+<div class='h4'>
+<strong>Groupon</strong>
+</div>
+<h2 class='h2'>Daily deals for mobile and web</h2>
+<h4 class='h4'>Innovation and improvement to attract and retain customers</h4>
+</div>
+<div class='overlay'></div>
+</a>
+</div>
+<div class='casestudy'>
+<a href='/mobile/case-study/sharethrough'>
+<div class='text'>
+<div class='h4'>
+<strong>Sharethrough</strong>
+</div>
+<h2 class='h2'>Mobile and web advertising application</h2>
+<h4 class='h4'>Building native advertising solutions that scale</h4>
+</div>
+<div class='overlay'></div>
+</a>
+</div>
+</div>
+<div class='thirtywide sidebyside'>
+<div class='casestudy'>
+<a href='/mobile/case-study/accuweather'>
+<div class='text'>
+<div class='h4'>
+<strong>AccuWeather</strong>
+</div>
+<h2 class='h2'>Weather forecasts at your fingertips</h2>
+<h4 class='h4'>Key mobile strategy with a profitable outcome</h4>
+</div>
+<div class='overlay'></div>
+</a>
+</div>
+<div class='casestudy'>
+<a href='/agile/case-study/gnip'>
+<div class='text'>
+<div class='h4'>
+<strong>Gnip</strong>
+</div>
+<h2 class='h2'>Social media data provider</h2>
+<h4 class='h4'>Fast product to market to facilitate growth and access</h4>
+</div>
+<div class='overlay'></div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='content'>
+<div class='thelatest'>
+<div class='sidebyside sixtywide'>
+<h2 class='h2'>Featured Blog Posts</h2>
+<div class='items'>
+<div class='item'>
+<a href='http://blog.pivotal.io/labs/uncategorized/two-subtle-influencers-in-product-design'>
+<div class='h3'>Two Subtle Influencers in Product Design</div>
+</a>
+<p>Aug 17, 2015</p>
+<a href='http://blog.pivotal.io/labs/uncategorized/two-subtle-influencers-in-product-design'>
+Read More
+<i class='fa fa-angle-right'></i>
+</a>
+</div>
+<div class='item'>
+<a href='http://blog.pivotal.io/labs/uncategorized/pivotal-girls-who-code-event-inspires-women-to-work-in-it'>
+<div class='h3'>Pivotal Girls Who Code Event Inspires Women To Work In IT</div>
+</a>
+<p>Aug 10, 2015</p>
+<a href='http://blog.pivotal.io/labs/uncategorized/pivotal-girls-who-code-event-inspires-women-to-work-in-it'>
+Read More
+<i class='fa fa-angle-right'></i>
+</a>
+</div>
+<div class='item'>
+<a href='http://blog.pivotal.io/pivotal-labs/uncategorized/siobhan-mcfeeney-to-lead-pivotals-transformation-practice'>
+<div class='h3'>Siobhan McFeeney to Lead Pivotal’s Transformation Practice</div>
+</a>
+<p>Jul 20, 2015</p>
+<a href='http://blog.pivotal.io/pivotal-labs/uncategorized/siobhan-mcfeeney-to-lead-pivotals-transformation-practice'>
+Read More
+<i class='fa fa-angle-right'></i>
+</a>
+</div>
+<div class='item'>
+<a href='http://blog.pivotal.io/labs/uncategorized/troubleshooting-bosh-releasesdeployments'>
+<div class='h3'>Troubleshooting BOSH Releases/Deployments</div>
+</a>
+<p>Jun 24, 2015</p>
+<a href='http://blog.pivotal.io/labs/uncategorized/troubleshooting-bosh-releasesdeployments'>
+Read More
+<i class='fa fa-angle-right'></i>
+</a>
+</div>
+<div class='item'>
+<a href='http://blog.pivotal.io/pivotal-labs/uncategorized/pivotal-developers-discuss-microservices-and-iot-at-qcon'>
+<div class='h3'>Pivotal Developers Discuss Microservices and IoT at QCon</div>
+</a>
+<p>Jun 11, 2015</p>
+<a href='http://blog.pivotal.io/pivotal-labs/uncategorized/pivotal-developers-discuss-microservices-and-iot-at-qcon'>
+Read More
+<i class='fa fa-angle-right'></i>
+</a>
+</div>
+<div class='item'>
+<a href='http://blog.pivotal.io/pivotal-labs/uncategorized/the-secret-behind-silicon-valley'>
+<div class='h3'>The Secret Behind Silicon Valley</div>
+</a>
+<p>Jun 9, 2015</p>
+<a href='http://blog.pivotal.io/pivotal-labs/uncategorized/the-secret-behind-silicon-valley'>
+Read More
+<i class='fa fa-angle-right'></i>
+</a>
+</div>
+<div class='item'>
+<a href='http://blog.pivotal.io/pivotal-labs/uncategorized/part-1-shifting-from-android-to-web-development'>
+<div class='h3'>Part 1: Shifting From Android To Web Development</div>
+</a>
+<p>Jun 3, 2015</p>
+<a href='http://blog.pivotal.io/pivotal-labs/uncategorized/part-1-shifting-from-android-to-web-development'>
+Read More
+<i class='fa fa-angle-right'></i>
+</a>
+</div>
+<div class='item'>
+<a href='http://blog.pivotal.io/pivotal-labs/uncategorized/deploying-a-dns-server-to-amazon-aws-with-bosh-init'>
+<div class='h3'>Deploying a DNS Server to Amazon AWS with bosh-init</div>
+</a>
+<p>May 26, 2015</p>
+<a href='http://blog.pivotal.io/pivotal-labs/uncategorized/deploying-a-dns-server-to-amazon-aws-with-bosh-init'>
+Read More
+<i class='fa fa-angle-right'></i>
+</a>
+</div>
+<div class='item'>
+<a href='http://blog.pivotal.io/pivotal-labs/uncategorized/ginning-up-a-title'>
+<div class='h3'>Ginning up a title</div>
+</a>
+<p>May 7, 2015</p>
+<a href='http://blog.pivotal.io/pivotal-labs/uncategorized/ginning-up-a-title'>
+Read More
+<i class='fa fa-angle-right'></i>
+</a>
+</div>
+<div class='item'>
+<a href='http://blog.pivotal.io/pivotal-labs/uncategorized/whats-said-on-the-internet-stays-on-the-internet'>
+<div class='h3'>What's said on the Internet stays on the Internet</div>
+</a>
+<p>Apr 23, 2015</p>
+<a href='http://blog.pivotal.io/pivotal-labs/uncategorized/whats-said-on-the-internet-stays-on-the-internet'>
+Read More
+<i class='fa fa-angle-right'></i>
+</a>
+</div>
+</div>
+</div>
+<div class='sidebyside thirtywide'>
+<h2 class='h2'>What's Going On</h2>
+<div class='items'>
+<div class='item'>
+<a href='http://www.meetup.com/Product-Council-NYC/events/223398101/'>
+<div class='title'>Product Council</div>
+</a>
+<p>
+Aug 31, 2015
+</p>
+</div>
+<div class='item'>
+<a href='http://www.meetup.com/Pivotal-Open-Source-Hub/events/224408522/'>
+<div class='title'>Pivotal Open Source Hub: Enabling R for big data using open source tools PL/R and PivotalR</div>
+</a>
+<p>
+Sep 3, 2015
+</p>
+</div>
+<div class='item'>
+<a href='http://www.meetup.com/Pivotal-Open-Source-Hub/events/224591102/'>
+<div class='title'>Pivotal Open Source Hub: Cloud Native Development Using Lattice</div>
+</a>
+<p>
+Sep 10, 2015
+</p>
+</div>
+<div class='item'>
+<a href='https://www.startupgrind.com/events/details/startup-grind-san-francisco-presents-bastian-lehmann-postmates'>
+<div class='title'>Startup Grind San Francisco Hosts Bastian Lehmann (Postmates)</div>
+</a>
+<p>
+Sep 15, 2015
+</p>
+</div>
+<div class='item'>
+<a href='https://www.startupgrind.com/events/details/startup-grind-new-york-city-presents-scott-heiferman-meetup'>
+<div class='title'>Startup Grind New York Hosts Scott Heiferman (Meetup)</div>
+</a>
+<p>
+Sep 16, 2015
+</p>
+</div>
+<div class='item'>
+<a href='https://www.startupgrind.com/events/details/startup-grind-silicon-valley-presents-chamath-palihapitiya-social-capital'>
+<div class='title'>Startup Grind Silicon Valley Hosts Chamath Palihapitiya (Social Capital)</div>
+</a>
+<p>
+Sep 17, 2015
+</p>
+</div>
+<div class='item'>
+<a href='https://www.windycityrails.org/'>
+<div class='title'>WindyCityRails 2015</div>
+</a>
+<p>
+Sep 17, 2015
+</p>
+</div>
+<div class='item'>
+<a href='http://rockymtnruby.com/'>
+<div class='title'>Rocky Mountain Ruby</div>
+</a>
+<p>
+Sep 23, 2015
+</p>
+</div>
+<div class='item'>
+<a href='http://www.meetup.com/Pivotal-Open-Source-Hub/events/224592234/'>
+<div class='title'>Pivotal Open Source Hub: Deploying Microservice Architectures with Spring Cloud on Cloud Foundry</div>
+</a>
+<p>
+Sep 23, 2015
+</p>
+</div>
+<div class='item'>
+<a href='https://www.startupgrind.com/events/details/startup-grind-toronto-presents-matt-miller-sequoia'>
+<div class='title'>Startup Grind Hosts Matt Miller (Sequoia)</div>
+</a>
+<p>
+Sep 24, 2015
+</p>
+</div>
+<div class='item'>
+<a href='https://www.startupgrind.com/events/details/startup-grind-tokyo-presents-yuko-sasakawa-imagine-plus-co-ltd'>
+<div class='title'>Startup Grind Hosts Yuko Sasakawa (Imagine Plus Co. Ltd)</div>
+</a>
+<p>
+Sep 25, 2015
+</p>
+</div>
+<div class='item'>
+<a href='http://www.denverstartupweek.org/'>
+<div class='title'>Denver Startup Week</div>
+</a>
+<p>
+Sep 28, 2015
+</p>
+</div>
+<div class='item'>
+<a href='https://www.startupgrind.com/events/details/startup-grind-seattle-presents-marc-barros-co-founder-moment'>
+<div class='title'>Startup Grind Seattle Hosts Marc Barros (Moment)</div>
+</a>
+<p>
+Sep 29, 2015
+</p>
+</div>
+<div class='item'>
+<a href='https://www.startupgrind.com/events/details/startup-grind-san-francisco-presents-ben-rubin-meerkat'>
+<div class='title'>Startup Grind San Francisco Hosts Ben Rubin (Meerkat)</div>
+</a>
+<p>
+Oct 13, 2015
+</p>
+</div>
+<div class='item'>
+<a href='https://www.startupgrind.com/events/details/startup-grind-seattle-presents-peter-hamilton-ceo-tune'>
+<div class='title'>Startup Grind Seattle Hosts Peter Hamilton (Tune)</div>
+</a>
+<p>
+Oct 27, 2015
+</p>
+</div>
+<div class='item'>
+<a href='http://www.therichwebexperience.com/conference/fort_lauderdale/2015/12/home'>
+<div class='title'>Rich Web/Continuous Delivery Experience</div>
+</a>
+<p>
+Dec 1, 2015
+</p>
+</div>
+</div>
+<br>
+<a href='/news-events#events'>
+View More
+<i class='fa fa-angle-right'></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='bottomgradient'></div>
+<div id='footer'>
+<div class='container'>
+<div class='twentywide sidebyside'>
+<ul class='footer-nav'>
+<li>
+<h3>
+<a href='/platform'>Platform</a>
+<ul class='footer-nav-menu'>
+<li>
+<a href='/platform'>
+Cloud Native Platform
+</a>
+</li>
+</ul>
+</h3>
+</li>
+<li>
+<h3>
+<a href='/big-data/pivotal-big-data-suite'>Data</a>
+<ul class='footer-nav-menu'>
+<li>
+<a href='/big-data/pivotal-big-data-suite'>
+Pivotal Big Data Suite
+</a>
+</li>
+<li>
+<a href='/big-data/pivotal-gemfire'>
+Pivotal GemFire
+</a>
+</li>
+<li>
+<a href='/big-data/pivotal-greenplum-database'>
+Pivotal Greenplum Database
+</a>
+</li>
+<li>
+<a href='/big-data/pivotal-hd'>
+Pivotal HD
+</a>
+</li>
+<li>
+<a href='/big-data/pivotal-hawq'>
+Pivotal HAWQ
+</a>
+</li>
+</ul>
+</h3>
+</li>
+<li>
+<h3>
+<a href='https://network.pivotal.io/'>Downloads</a>
+</h3>
+</li>
+<li>
+<h3>
+<a href='http://docs.pivotal.io/'>Documentation</a>
+</h3>
+</li>
+<li>
+<h3>
+<a href='https://support.pivotal.io/hc/en-us'>Support</a>
+</h3>
+</li>
+</ul>
+</div>
+<div class='twentywide sidebyside'>
+<ul class='footer-nav'>
+<li>
+<h3>
+<a href='/labs'>Labs</a>
+</h3>
+</li>
+<li>
+<h3>
+<a href='/customers'>Customers</a>
+<ul class='footer-nav-menu'>
+<li>
+<a href='/customers#all'>
+Show All Customers
+</a>
+</li>
+<li>
+<a href='/customers/axelspringer'>
+Axel Springer
+</a>
+</li>
+<li>
+<a href='/customers/bakrie'>
+Bakrie Telecom
+</a>
+</li>
+<li>
+<a href='/customers/citic'>
+China CITIC Bank
+</a>
+</li>
+<li>
+<a href='/customers/corelogic'>
+CoreLogic
+</a>
+</li>
+<li>
+<a href='/customers/hulu'>
+Hulu
+</a>
+</li>
+<li>
+<a href='/customers/indianrailways'>
+Indian Railways
+</a>
+</li>
+<li>
+<a href='/customers/philips'>
+Philips
+</a>
+</li>
+<li>
+<a href='/customers/sbi'>
+SBI Securities
+</a>
+</li>
+<li>
+<a href='/customers/southwest'>
+Southwest Airlines
+</a>
+</li>
+<li>
+<a href='/customers/tranquilidade'>
+Tranquilidade
+</a>
+</li>
+<li>
+<a href='/customers/wgsn'>
+WGSN Group
+</a>
+</li>
+<li>
+<a href='/customers/zions'>
+Zions Bancorporation
+</a>
+</li>
+
+</ul>
+</h3>
+</li>
+<li>
+<a href='/news-events'>News &amp; Events</a>
+</li>
+</ul>
+</div>
+<div class='twentywide sidebyside'>
+<ul class='footer-nav'>
+<li>
+<h3>
+<a href='/about'>About</a>
+<ul class='footer-nav-menu'>
+<li>
+<a href='/about'>Company</a>
+</li>
+<li>
+<a href='/team'>Executive Team</a>
+</li>
+<li>
+<a href='/press-center'>Press Center</a>
+</li>
+<li>
+<a href='/partners'>Partners</a>
+</li>
+<li>
+<a href='/oss'>OSS</a>
+</li>
+<li>
+<a href='/training'>Training</a>
+</li>
+<li>
+<a href='/careers'>Careers</a>
+</li>
+<li>
+<a href='/resources'>Resources</a>
+</li>
+<li>
+<a href='/locations' id='locations-link'>Locations</a>
+</li>
+
+</ul>
+</h3>
+</li>
+<p>
+<a href='/privacy-policy'>Privacy and Cookie Policy</a>
+<br>
+<a href='/terms-of-use'>Terms of Use</a>
+<br>
+<a href='/product-guide'>Product Guide</a>
+<br>
+<a href='/open-source'>Open Source Disclosure Information</a>
+<br>
+<a href='/open-source-indemnification-program'>Open Source Indemnification Program</a>
+</p>
+</ul>
+</div>
+<div class='twentywide sidebyside'>
+<div class='white-round-box'>
+<i class='fa fa-at'></i>
+<div class='h4'>Contact Pivotal</div>
+<ul>
+<li>
+<a class='contactpopuplink'>Sales</a>
+</li>
+<li>
+<a class='contactpopuplink'>Information</a>
+</li>
+<li>
+<a class='contactpopuplink'>Questions</a>
+</li>
+</ul>
+</div>
+<div class='white-round-box'>
+<i class='fa fa-support'></i>
+<div class='h4'>Pivotal Support</div>
+<ul>
+<li>
+<a href='https://support.pivotal.io/hc/en-us'>Help &amp; Support</a>
+</li>
+<li>
+<a href='/training'>Training</a>
+</li>
+</ul>
+</div>
+<div class='social-icons'>
+<a href='https://plus.google.com/105320112436428794490/posts'>
+<i class='fa fa-google-plus'></i>
+</a>
+<a href='https://www.linkedin.com/company/3048967'>
+<i class='fa fa-linkedin'></i>
+</a>
+<a href='https://twitter.com/pivotal'>
+<i class='fa fa-twitter'></i>
+</a>
+<a href='https://www.youtube.com/user/goPivotal'>
+<i class='fa fa-youtube-play'></i>
+</a>
+<a href='https://www.facebook.com/pivotalsoftware'>
+<i class='fa fa-facebook'></i>
+</a>
+</div>
+</div>
+</div>
+<div class='copyright'>
+<div class='container'>
+&copy; Copyright
+<script>
+  var d = new Date();
+  document.write(d.getFullYear());
+</script>
+Pivotal Software, Inc.
+All Rights Reserved.
+<a href='/sitemap'>Sitemap</a>
+<div class='flags'>
+<a href='/cn'>
+<img class='lazy' data-height='14' data-original='https://d1fto35gcfffzn.cloudfront.net/images/icons/CN.png' data-width='20'>
+</a>
+<a href='/de'>
+<img class='lazy' data-height='14' data-original='https://d1fto35gcfffzn.cloudfront.net/images/icons/DE.png' data-width='20'>
+</a>
+<a href='/fr'>
+<img class='lazy' data-height='14' data-original='https://d1fto35gcfffzn.cloudfront.net/images/icons/FR.png' data-width='22'>
+</a>
+<a href='/jp'>
+<img class='lazy' data-height='14' data-original='https://d1fto35gcfffzn.cloudfront.net/images/icons/JP.png' data-width='20'>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='contactpopup'>
+<div class='closeit'>
+<div class='inner'>
+<div class='h4'>Close</div>
+</div>
+</div>
+<script src='https://app-sj05.marketo.com/js/forms2/js/forms2.min.js'></script>
+<div class='popupreg'>
+<form id='mktoForm_1347'>
+<div class='h2'>Glad You're Ready. Let's Get Started!</div>
+<p>Let us know how we can contact you.</p>
+<script>
+  var contactformID = "1347"
+  MktoForms2.loadForm("https://app-sj05.marketo.com", "625-IUJ-009", contactformID, function(form){
+  form.onSuccess(function(values, followUpUrl) {
+    jQuery(".popupreg form").hide();
+    jQuery('.popupconfirmation').show();
+    window.setTimeout(function (){location.href = location.href + "?contact-confirmation"; }, 800);
+    form.getFormElem().hide();
+    return false;
+  });
+  });
+</script>
+</form>
+</div>
+<div class='popupconfirmation'>
+<div class='h2'>Thank you!</div>
+<p>We'll respond shortly.</p>
+</div>
+</div>
+<script async="async" src="/assets/application-768072535d0994a3b616d31a94ac9f85.js"></script>
+</body>
+</html>
